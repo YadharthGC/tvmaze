@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: aliceblue;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right top, #a2d07c, #e0c076, #feb297, #fab1c3, #dbbbe0);
+    font-family: 'STIX Two Math', serif;
+    color: #e0c076;
+    font-weight: bold;
+}
+
+.image {
+    height: 100%;
+    width: 100px;
+    object-fit: cover;
+    margin-left: 2%;
+    border-radius: 10px;
+}
+
+.a {
+    background-image: linear-gradient(to right top, #7d7cd0, #b56cc0, #de5b9e, #f15770, #ed663e);
+    margin-bottom: 1%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+}
+
+.text {
+    margin-left: 2%;
+}
+
+.list {
+    display: grid;
+}
+
+.image:hover {
+    transform: scale(1.2);
+}
+
+@media (min-width:1200px) and (max-width:1600px) {
+    .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        column-gap: 1%;
+    }
+}
+
+@media (min-width:900px) and (max-width:1200px) {
+    .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        column-gap: 1%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .list,
+    .a {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        place-items: center;
+        column-gap: 1%;
+    }
+}
